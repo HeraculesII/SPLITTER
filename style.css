@@ -12,6 +12,10 @@ body {
   background-color: #ffffff;
 }
 
+#zero {
+  display: none;
+  color: #E17457;
+}
 
 header {
   height: 194px;
@@ -54,6 +58,10 @@ main {
 .dollar1 {
   margin-top: 32px;
   margin-bottom: 32px;
+}
+.bill {
+  display: flex;
+  justify-content: space-between;
 }
 
 .bill {
@@ -118,7 +126,9 @@ input {
 }
 
 .containerp {
+  font-family: 'Space Mono', monospace;
 
+  border: none;
   width: 147px;
   height: 48px;
   background-color: #00474B;

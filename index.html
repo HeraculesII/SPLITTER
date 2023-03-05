@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
 </head>
 <title> SPLITTER </title>
@@ -30,28 +31,30 @@
         
       
         <div class="containers">
-          <div class="containerp">
+          <button value="5" onclick="percentButton(this)" class="containerp">
             <p>5%</p>
-          </div>
-          <div class="containerp">
+          </button>
+          <button value="10" onclick="percentButton(this)" class="containerp">
             <p>10%</p>
-          </div>
-          <div class="containerp">
+          </button>
+          <button value="15" onclick="percentButton(this)" class="containerp">
             <p>15%</p>
-          </div>
-          <div class="containerp">
+          </button>
+          <button value="25" onclick="percentButton(this)" class="containerp">
             <p>25%</p>
-          </div>
-          <div class="containerp">
+          </button>
+          <button value="50" onclick="percentButton(this)" class="containerp">
             <p>50%</p>
-          </div>
+          </button>
           <div>
             <input class="containerpp" type="number" id="number"  name="number" placeholder="Custom">
           </div>
         </div>
       </div>
       <div class="dollar1">
-        <p class="bill"> Number of People </p>
+        <p class="bill"> Number of People <span id="zero">
+          Can’t be zero </span>
+         </p>
         <input class="amount" type="number" id="logo-person"  name="number" placeholder="">
       </div>
     </div>
@@ -64,7 +67,7 @@
               <p class="person"> / Person </p>
             </div>
             <div class="dollar-amount">
-              <h4 > $4.27 </h4>
+              <h4 id="tip-person" > $4.27 </h4>
             </div>
           </div>
           <div class="lower">
@@ -73,11 +76,11 @@
               <p class="person"> / Person </p>
             </div>
             <div class="dollar-amount">
-              <h4 > $32.79 </h4>
+              <h4 id="total-person" > $32.79 </h4>
             </div>
           </div>
           <div class="res">
-            <div class="reset">
+            <div id="reset-button" class="reset">
               <h4 class="click-reset">
                 RESET
               </h4>
@@ -90,7 +93,8 @@
       </div>
     </div>
     </main>
-    
 
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
 </body>
 </html>
